@@ -100,13 +100,10 @@ npm install
 
 ## 👩‍💻 Autoria
 
-Gabrielly Oliveira Venturini
-
-Patrick Costa
-
-Lúcio Carlos
-
-Pedro Henrique
+- Gabrielly Oliveira Venturini
+- Patrick Costa
+- Lúcio Carlos
+- Pedro Henrique
 
 Projeto desenvolvido para fins acadêmicos no curso de
 Análise e Desenvolvimento de Sistemas – ULBRA
