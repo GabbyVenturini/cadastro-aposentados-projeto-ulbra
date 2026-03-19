@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro – Educação Previdenciária</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="content">
+      <h1>Cadastro – Educação Previdenciária</h1>
+      <hr />
+
+      <div class="layout">
+        <div class="info">
+          <p>
+            Este canal é destinado aos servidores do IpasemNH que desejam manifestar
+            interesse nas ações de Educação Previdenciária do IPASEM, como programas
+            de preparação para aposentadoria, grupos de convivência e outras atividades
+            relacionadas.
+          </p>
+
+          <p>
+            Ao enviar seus dados, a equipe responsável poderá entrar em contato para
+            orientar sobre próximas etapas, cronogramas de encontros e demais
+            informações necessárias.
+          </p>
+
+          <div class="alert-box">
+            <span class="alert-dot"></span>
+            <p>
+              As informações enviadas por este formulário são utilizadas
+              exclusivamente para contato institucional do IPASEM.
+            </p>
+          </div>
+        </div>
+
+        <div class="form-card">
+          <h2>Formulário de contato</h2>
+
+          <form id="cadastroForm">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" required />
+
+            <label for="cpf">CPF</label>
+            <input
+              type="text"
+              id="cpf"
+              name="cpf"
+              placeholder="000.000.000-00"
+              maxlength="14"
+              required
+            />
+
+            <label for="telefone">Telefone</label>
+            <input
+              type="text"
+              id="telefone"
+              name="telefone"
+              placeholder="(51) 00000-0000"
+              maxlength="15"
+              required
+            />
+
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="nome.sobrenome@dominio.com.br"
+              required
+            />
+
+            <div class="radio-group">
+              <span class="group-title">APOIO PSICOSSOCIAL</span>
+              <p>Escolha um contato como destinatário deste formulário</p>
+
+              <label class="radio-option">
+                <input type="radio" name="destinatario" value="Ana - Psicóloga" required />
+                Ana - Psicóloga
+              </label>
+
+              <label class="radio-option">
+                <input type="radio" name="destinatario" value="Evelyn - Assistente Social" required />
+                Evelyn - Assistente Social
+              </label>
+            </div>
+
+            <label for="mensagem">Observações / Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+            <button type="submit">Enviar cadastro</button>
+          </form>
+
+          <p id="status" class="status"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
