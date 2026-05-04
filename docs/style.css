@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f3f3f3;
+  color: #222;
+}
+
+.page {
+  padding: 28px 40px;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #0d3f91;
+  margin: 0 0 14px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #d9d9d9;
+  margin-bottom: 20px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1.45fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.info p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0 0 24px;
+}
+
+.alert-box {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #cdeefa;
+  padding: 18px 16px;
+  border-radius: 6px;
+}
+
+.alert-dot {
+  width: 14px;
+  height: 14px;
+  background: #dda11a;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.alert-box p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.form-card {
+  background: #fff;
+  border: 1px solid #d7d7d7;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.form-card h2 {
+  margin: 0 0 18px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #153d91;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  outline: none;
+  background: #fff;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #1a73e8;
+}
+
+.radio-group {
+  margin-bottom: 16px;
+}
+
+.group-title {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.radio-group p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.radio-option input {
+  width: auto;
+  margin: 0;
+}
+
+textarea {
+  min-height: 88px;
+  resize: vertical;
+}
+
+button {
+  background: #156cf0;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #0f5dd0;
+}
+
+.status {
+  margin-top: 16px;
+  min-height: 20px;
+  font-size: 14px;
+}
+
+.status.success {
+  color: #1f7a1f;
+}
+
+.status.error {
+  color: #c62828;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .page {
+    padding: 20px;
+  }
+}
